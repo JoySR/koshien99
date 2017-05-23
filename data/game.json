@@ -1,0 +1,997 @@
+{
+  "schools": [
+    {
+      "id": 1,
+      "prefecture": "北北海道",
+      "prefecture-id": "nhokkaido",
+      "name": "クラーク国際",
+      "count": "初出場",
+      "games":["6-1"]
+    }, {
+      "id": 2,
+      "prefecture": "南北海道",
+      "prefecture-id": "shokkaido",
+      "name": "北海",
+      "count": "2年連続37回目",
+      "games":["6-2","11-4","12-3","13-2","14-1"]
+    }, {
+      "id": 3,
+      "prefecture": "青森",
+      "prefecture-id": "aomori",
+      "name": "八戸学院光星",
+      "count": "２年ぶり８回目",
+      "games":["3-1","8-3"]
+    }, {
+      "id": 4,
+      "prefecture": "岩手",
+      "prefecture-id": "iwate",
+      "name": "盛岡大付",
+      "count": "２年ぶり９回目",
+      "games":["1-3","7-3","10-3"]
+    }, {
+      "id": 5,
+      "prefecture": "秋田",
+      "prefecture-id": "akita",
+      "name": "大曲工",
+      "count": "初出場",
+      "games":["4-4"]
+    }, {
+      "id": 6,
+      "prefecture": "山形",
+      "prefecture-id": "yamagata",
+      "name": "鶴岡東",
+      "count": "２年連続５回目",
+      "games":["2-1"]
+    }, {
+      "id": 7,
+      "prefecture": "宮城",
+      "prefecture-id": "miyagi",
+      "name": "東北",
+      "count": "７年ぶり22回目",
+      "games":["3-3"]
+    }, {
+      "id": 8,
+      "prefecture": "福島",
+      "prefecture-id": "fukushima",
+      "name": "聖光学院",
+      "count": "10年連続13回目",
+      "games":["6-1","11-1","12-3"]
+    }, {
+      "id": 9,
+      "prefecture": "茨城",
+      "prefecture-id": "ibaraki",
+      "name": "常総学院",
+      "count": "３年ぶり16回目",
+      "games":["3-4","8-2","10-4","12-1"]
+    }, {
+      "id": 10,
+      "prefecture": "栃木",
+      "prefecture-id": "tochigi",
+      "name": "作新学院",
+      "count": "６年連続１２回目",
+      "games":["6-3","11-2","12-4","13-1","14-1"]
+    }, {
+      "id": 11,
+      "prefecture": "群馬",
+      "prefecture-id": "gunma",
+      "name": "前橋育英",
+      "count": "３年ぶり２回目",
+      "games":["5-3"]
+    }, {
+      "id": 12,
+      "prefecture": "埼玉",
+      "prefecture-id": "saitama",
+      "name": "花咲徳栄",
+      "count": "２年連続４回目",
+      "games":["4-4","9-2","11-2"]
+    }, {
+      "id": 13,
+      "prefecture": "千葉",
+      "prefecture-id": "chiba",
+      "name": "木更津総合",
+      "count": "３年ぶり５回目",
+      "games":["7-1","11-3","12-4"]
+    }, {
+      "id": 14,
+      "prefecture": "東東京",
+      "prefecture-id": "etokyo",
+      "name": "関東一",
+      "count": "２年連続７回目",
+      "games":["4-1"]
+    }, {
+      "id": 15,
+      "prefecture": "西東京",
+      "prefecture-id": "wtokyo",
+      "name": "八王子",
+      "count": "初出場",
+      "games":["5-1"]
+    }, {
+      "id": 16,
+      "prefecture": "神奈川",
+      "prefecture-id": "kanagawa",
+      "name": "横浜",
+      "count": "３年ぶり１６回目",
+      "games":["3-3","8-4"]
+    }, {
+      "id": 17,
+      "prefecture": "新潟",
+      "prefecture-id": "niigata",
+      "name": "中越",
+      "count": "２年連続１０回目",
+      "games":["5-2"]
+    }, {
+      "id": 18,
+      "prefecture": "長野",
+      "prefecture-id": "nagano",
+      "name": "佐久長聖",
+      "count": "２年ぶり７回目",
+      "games":["1-1"]
+    }, {
+      "id": 19,
+      "prefecture": "山梨",
+      "prefecture-id": "yamanashi",
+      "name": "山梨学院",
+      "count": "５年ぶり６回目",
+      "games":["3-2","8-1"]
+    }, {
+      "id": 20,
+      "prefecture": "静岡",
+      "prefecture-id": "shizuoka",
+      "name": "常葉菊川",
+      "count": "３年ぶり５回目",
+      "games":["6-4"]
+    }, {
+      "id": 21,
+      "prefecture": "愛知",
+      "prefecture-id": "aichi",
+      "name": "東邦",
+      "count": "２年ぶり１７回目",
+      "games":["2-4","8-3","11-1"]
+    }, {
+      "id": 22,
+      "prefecture": "岐阜",
+      "prefecture-id": "gifu",
+      "name": "中京",
+      "count": "１４年ぶり６回目",
+      "games":["2-2","8-2"]
+    }, {
+      "id": 23,
+      "prefecture": "三重",
+      "prefecture-id": "mie",
+      "name": "いなべ総合",
+      "count": "６年ぶり２回目",
+      "games":["2-1","8-1","10-2"]
+    }, {
+      "id": 24,
+      "prefecture": "富山",
+      "prefecture-id": "toyama",
+      "name": "富山第一",
+      "count": "３年ぶり２回目",
+      "games":["5-2","9-3"]
+    }, {
+      "id": 25,
+      "prefecture": "石川",
+      "prefecture-id": "ishikawa",
+      "name": "星稜",
+      "count": "２年ぶり１８回目",
+      "games":["4-3"]
+    }, {
+      "id": 26,
+      "prefecture": "福井",
+      "prefecture-id": "fukui",
+      "name": "北陸",
+      "count": "２４年ぶり３回目",
+      "games":["2-4"]
+    }, {
+      "id": 27,
+      "prefecture": "滋賀",
+      "prefecture-id": "shiga",
+      "name": "近江",
+      "count": "２年ぶり１２回目",
+      "games":["3-4"]
+    }, {
+      "id": 28,
+      "prefecture": "京都",
+      "prefecture-id": "kyoto",
+      "name": "京都翔英",
+      "count": "初出場",
+      "games":["4-2"]
+    }, {
+      "id": 29,
+      "prefecture": "大阪",
+      "prefecture-id": "osaka",
+      "name": "履正社",
+      "count": "６年ぶり３回目",
+      "games":["2-3","8-4","10-4"]
+    }, {
+      "id": 30,
+      "prefecture": "兵庫",
+      "prefecture-id": "hyogo",
+      "name": "市尼崎",
+      "count": "３３年ぶり２回目",
+      "games":["3-1"]
+    }, {
+      "id": 31,
+      "prefecture": "奈良",
+      "prefecture-id": "nara",
+      "name": "智弁学園",
+      "count": "２年ぶり１８回目",
+      "games":["1-2", "7-4"]
+    }, {
+      "id": 32,
+      "prefecture": "和歌山",
+      "prefecture-id": "wakayama",
+      "name": "市和歌山",
+      "count": "２年ぶり５回目",
+      "games":["4-3","9-1"]
+    }, {
+      "id": 33,
+      "prefecture": "岡山",
+      "prefecture-id": "okayama",
+      "name": "創志学園",
+      "count": "初出場",
+      "games":["7-3"]
+    }, {
+      "id": 34,
+      "prefecture": "広島",
+      "prefecture-id": "hiroshima",
+      "name": "広島新庄",
+      "count": "２年連続２回目",
+      "games":["4-1","9-3","11-3"]
+    }, {
+      "id": 35,
+      "prefecture": "鳥取",
+      "prefecture-id": "tottori",
+      "name": "境",
+      "count": "９年ぶり８回目",
+      "games":["7-2"]
+    }, {
+      "id": 36,
+      "prefecture": "島根",
+      "prefecture-id": "shimane",
+      "name": "出雲",
+      "count": "初出場",
+      "games":["1-2"]
+    }, {
+      "id": 37,
+      "prefecture": "山口",
+      "prefecture-id": "yamaguchi",
+      "name": "高川学園",
+      "count": "初出場",
+      "games":["2-3"]
+    }, {
+      "id": 38,
+      "prefecture": "香川",
+      "prefecture-id": "kagawa",
+      "name": "尽誠学園",
+      "count": "９年ぶり１１回目",
+      "games":["6-3"]
+    }, {
+      "id": 39,
+      "prefecture": "徳島",
+      "prefecture-id": "tokushima",
+      "name": "鳴門",
+      "count": "５年連続１１回目",
+      "games":["1-1", "7-4","10-3","12-2"]
+    }, {
+      "id": 40,
+      "prefecture": "愛媛",
+      "prefecture-id": "ehime",
+      "name": "松山聖陵",
+      "count": "初出場",
+      "games":["6-2"]
+    }, {
+      "id": 41,
+      "prefecture": "高知",
+      "prefecture-id": "kochi",
+      "name": "明徳義塾",
+      "count": "７年連続１８回目",
+      "games":["7-2","10-1","12-2","13-1"]
+    }, {
+      "id": 42,
+      "prefecture": "福岡",
+      "prefecture-id": "fukuoka",
+      "name": "九州国際大付",
+      "count": "３年連続７回目",
+      "games":["1-3"]
+    }, {
+      "id": 43,
+      "prefecture": "佐賀",
+      "prefecture-id": "saga",
+      "name": "唐津商",
+      "count": "５年ぶり５回目",
+      "games":["7-1"]
+    }, {
+      "id": 44,
+      "prefecture": "長崎",
+      "prefecture-id": "nagasaki",
+      "name": "長崎商",
+      "count": "２９年ぶり７回目",
+      "games":["3-2"]
+    }, {
+      "id": 45,
+      "prefecture": "熊本",
+      "prefecture-id": "kumamoto",
+      "name": "秀岳館",
+      "count": "１５年ぶり２回目",
+      "games":["6-4","10-2","12-1","13-2"]
+    }, {
+      "id": 46,
+      "prefecture": "大分",
+      "prefecture-id": "oita",
+      "name": "大分",
+      "count": "２年ぶり２回目",
+      "games":["2-2"]
+    }, {
+      "id": 47,
+      "prefecture": "宮崎",
+      "prefecture-id": "miyazaki",
+      "name": "日南学園",
+      "count": "２年ぶり８回目",
+      "games":["5-1","9-1","11-4"]
+    }, {
+      "id": 48,
+      "prefecture": "鹿児島",
+      "prefecture-id": "kagoshima",
+      "name": "樟南",
+      "count": "３年ぶり１９回目",
+      "games":["4-2","9-2"]
+    }, {
+      "id": 49,
+      "prefecture": "沖縄",
+      "prefecture-id": "okinawa",
+      "name": "嘉手納",
+      "count": "初出場",
+      "games":["5-3","10-1"]
+    }
+  ],
+  "schedule": [
+    {
+      "date": "2016年08月07日",
+      "games": [
+        {
+          "id": "1-1",
+          "time": "10:30",
+          "round": "1回戦",
+          "first": "佐久長聖",
+          "firstIsHome": true,
+          "third": "鳴門",
+          "score": "2-3",
+          "fScore": ["0","0","0","0","1","0","1","0","0"],
+          "tScore": ["2","1","0","0","0","0","0","0","X"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016080761.html",
+          "video": "http://www.asahi.com/koshien/digest/20160807_1d.html"
+        },{
+          "id": "1-2",
+          "time": "13:00",
+          "round": "1回戦",
+          "first": "出雲",
+          "firstIsHome": false,
+          "third": "智弁学園",
+          "score": "1-6",
+          "fScore": ["0","0","1","0","0","0","0","0","0"],
+          "tScore": ["2","0","1","0","0","1","0","2","0"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016080762.html",
+          "video": "http://www.asahi.com/koshien/digest/20160807_2d.html"
+        },{
+          "id": "1-3",
+          "time": "15:30",
+          "round": "1回戦",
+          "first": "九州国際大付",
+          "firstIsHome": false,
+          "third": "盛岡大付",
+          "score": "6-8",
+          "fScore": ["3","0","1","0","0","0","1","1","0"],
+          "tScore": ["2","0","1","1","0","1","0","1","2"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016080763.html",
+          "video": "http://www.asahi.com/koshien/digest/20160807_3d.html"
+        }
+      ]
+    },{
+      "date": "2016年08月08日",
+      "games": [
+        {
+          "id": "2-1",
+          "time": "08:00",
+          "round": "1回戦",
+          "first": "いなべ総合",
+          "firstIsHome": false,
+          "third": "鶴岡東",
+          "score": "5-3",
+          "fScore": ["0","0","1","0","2","0","2","0","X"],
+          "tScore": ["0","2","0","0","0","0","0","0","1"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016080861.html",
+          "video": "http://www.asahi.com/koshien/digest/20160808_1d.html"
+        },{
+          "id": "2-2",
+          "time": "10:30",
+          "round": "1回戦",
+          "first": "中京",
+          "firstIsHome": true,
+          "third": "大分",
+          "score": "12-4",
+          "fScore": ["1","0","1","6","0","0","0","4","0"],
+          "tScore": ["0","0","2","0","0","1","1","0","0"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016080862.html",
+          "video": "http://www.asahi.com/koshien/digest/20160808_2d.html"
+        },{
+          "id": "2-3",
+          "time": "13:00",
+          "round": "1回戦",
+          "first": "高川学園",
+          "firstIsHome": true,
+          "third": "履正社",
+          "score": "1-5",
+          "fScore": ["0","0","0","0","0","1","0","0","0"],
+          "tScore": ["0","4","0","0","0","0","1","0","X"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016080863.html",
+          "video": "http://www.asahi.com/koshien/digest/20160808_3d.html"
+        },{
+          "id": "2-4",
+          "time": "15:30",
+          "round": "1回戦",
+          "first": "東邦",
+          "firstIsHome": false,
+          "third": "北陸",
+          "score": "19-9",
+          "fScore": ["0","3","1","12","0","1","2","0","X"],
+          "tScore": ["0","0","0","2","0","0","3","2","2"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016080864.html",
+          "video": "http://www.asahi.com/koshien/digest/20160808_4d.html"
+        }
+      ]
+    },{
+      "date": "2016年08月09日",
+      "games": [
+        {
+          "id": "3-1",
+          "time": "08:00",
+          "round": "1回戦",
+          "first": "市尼崎",
+          "firstIsHome": false,
+          "third": "八戸学院光星",
+          "score": "4-5",
+          "fScore": ["1","0","0","0","0","0","1","0","2","0"],
+          "tScore": ["0","0","0","0","0","4","0","0","0","1"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016080961.html",
+          "video": "http://www.asahi.com/koshien/digest/20160809_1d.html"
+        },{
+          "id": "3-2",
+          "time": "10:30",
+          "round": "1回戦",
+          "first": "山梨学院",
+          "firstIsHome": false,
+          "third": "長崎商",
+          "score": "5-3",
+          "fScore": ["2","0","1","0","0","0","2","0","X"],
+          "tScore": ["0","0","0","0","0","0","0","1","2"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016080962.html",
+          "video": "http://www.asahi.com/koshien/digest/20160809_2d.html"
+        },{
+          "id": "3-3",
+          "time": "13:00",
+          "round": "1回戦",
+          "first": "東北",
+          "firstIsHome": false,
+          "third": "横浜",
+          "score": "1-7",
+          "fScore": ["0","0","1","0","0","0","0","0","0"],
+          "tScore": ["1","0","3","1","0","1","1","0","0"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016080963.html",
+          "video": "http://www.asahi.com/koshien/digest/20160809_3d.html"
+        },{
+          "id": "3-4",
+          "time": "15:30",
+          "round": "1回戦",
+          "first": "近江",
+          "firstIsHome": false,
+          "third": "常総学院",
+          "score": "0-11",
+          "fScore": ["0","0","0","0","0","0","0","0","0"],
+          "tScore": ["2","3","0","2","0","1","2","0","1"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016080964.html",
+          "video": "http://www.asahi.com/koshien/digest/20160809_4d.html"
+        }
+      ]
+    },{
+      "date": "2016年08月10日",
+      "games": [
+        {
+          "id": "4-1",
+          "time": "08:00",
+          "round": "1回戦",
+          "first": "関東一",
+          "firstIsHome": false,
+          "third": "広島新庄",
+          "score": "1-2",
+          "fScore": ["1","0","0","0","0","0","0","0","0","0","0","0"],
+          "tScore": ["0","0","0","0","1","0","0","0","0","0","0","1"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016081061.html",
+          "video": "http://www.asahi.com/koshien/digest/20160810_1d.html"
+        },{
+          "id": "4-2",
+          "time": "10:30",
+          "round": "1回戦",
+          "first": "京都翔英",
+          "firstIsHome": true,
+          "third": "樟南",
+          "score": "1-9",
+          "fScore": ["1","0","0","0","0","0","0","0","0"],
+          "tScore": ["3","0","0","0","0","4","2","0","X"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016081062.html",
+          "video": "http://www.asahi.com/koshien/digest/20160810_2d.html"
+        },{
+          "id": "4-3",
+          "time": "13:00",
+          "round": "1回戦",
+          "first": "星稜",
+          "firstIsHome": false,
+          "third": "市和歌山",
+          "score": "2-8",
+          "fScore": ["1","1","0","0","0","0","0","0","0"],
+          "tScore": ["1","3","0","0","0","0","1","3","0"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016081063.html",
+          "video": "http://www.asahi.com/koshien/digest/20160810_3d.html"
+        },{
+          "id": "4-4",
+          "time": "15:30",
+          "round": "1回戦",
+          "first": "花咲徳栄",
+          "firstIsHome": true,
+          "third": "大曲工",
+          "score": "6-1",
+          "fScore": ["1","1","0","1","0","0","0","2","1"],
+          "tScore": ["0","0","0","1","0","0","0","0","0"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016081064.html",
+          "video": "http://www.asahi.com/koshien/digest/20160810_4d.html"
+        }
+      ]
+    },{
+      "date": "2016年08月11日",
+      "games": [
+        {
+          "id": "5-1",
+          "time": "09:30",
+          "round": "1回戦",
+          "first": "八王子",
+          "firstIsHome": false,
+          "third": "日南学園",
+          "score": "1-7",
+          "fScore": ["0","0","0","0","0","0","0","0","1"],
+          "tScore": ["0","0","0","0","1","5","1","0","0"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016081161.html",
+          "video": "http://www.asahi.com/koshien/digest/20160811_1d.html"
+        },{
+          "id": "5-2",
+          "time": "12:00",
+          "round": "1回戦",
+          "first": "富山第一",
+          "firstIsHome": false,
+          "third": "中越",
+          "score": "1-0",
+          "fScore": ["0","0","0","0","0","0","0","0","1X"],
+          "tScore": ["0","0","0","0","0","0","0","0","0"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016081162.html",
+          "video": "http://www.asahi.com/koshien/digest/20160811_2d.html"
+        },{
+          "id": "5-3",
+          "time": "14:30",
+          "round": "2回戦",
+          "first": "嘉手納",
+          "firstIsHome": true,
+          "third": "前橋育英",
+          "score": "10-3",
+          "fScore": ["0","0","1","0","0","0","8","1","0"],
+          "tScore": ["0","0","2","0","1","0","0","0","0"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016081163.html",
+          "video": "http://www.asahi.com/koshien/digest/20160811_3d.html"
+        }
+      ]
+    },{
+      "date": "2016年08月12日",
+      "games": [
+        {
+          "id": "6-1",
+          "time": "08:00",
+          "round": "2回戦",
+          "first": "聖光学院",
+          "firstIsHome": true,
+          "third": "クラーク国際",
+          "score": "5-3",
+          "fScore": ["0","1","0","0","0","0","0","4","0"],
+          "tScore": ["1","0","1","0","1","0","0","0","0"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016081261.html",
+          "video": "http://www.asahi.com/koshien/digest/20160812_1d.html"
+        },{
+          "id": "6-2",
+          "time": "10:30",
+          "round": "2回戦",
+          "first": "松山聖陵",
+          "firstIsHome": true,
+          "third": "北海",
+          "score": "1-2",
+          "fScore": ["0","0","0","0","0","1","0","0","0"],
+          "tScore": ["0","1","0","0","0","0","0","0","1X"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016081262.html",
+          "video": "http://www.asahi.com/koshien/digest/20160812_2d.html"
+        },{
+          "id": "6-3",
+          "time": "13:00",
+          "round": "2回戦",
+          "first": "尽誠学園",
+          "firstIsHome": false,
+          "third": "作新学院",
+          "score": "0-3",
+          "fScore": ["0","0","0","0","0","0","0","0","0"],
+          "tScore": ["2","0","0","0","0","0","1","0","0"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016081263.html",
+          "video": "http://www.asahi.com/koshien/digest/20160812_3d.html"
+        },{
+          "id": "6-4",
+          "time": "15:30",
+          "round": "2回戦",
+          "first": "秀岳館",
+          "firstIsHome": false,
+          "third": "常葉菊川",
+          "score": "6-1",
+          "fScore": ["0","0","0","1","0","0","3","2","X"],
+          "tScore": ["0","0","0","0","0","1","0","0","0"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016081264.html",
+          "video": "http://www.asahi.com/koshien/digest/20160812_4d.html"
+        }
+      ]
+    },{
+      "date": "2016年08月13日",
+      "games": [
+        {
+          "id": "7-1",
+          "time": "08:00",
+          "round": "2回戦",
+          "first": "木更津総合",
+          "firstIsHome": false,
+          "third": "唐津商",
+          "score": "2-0",
+          "fScore": ["0","2","0","0","0","0","0","0","0"],
+          "tScore": ["0","0","0","0","0","0","0","0","0"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016081361.html",
+          "video": "http://www.asahi.com/koshien/digest/20160813_1d.html"
+        },{
+          "id": "7-2",
+          "time": "10:30",
+          "round": "2回戦",
+          "first": "明徳義塾",
+          "firstIsHome": false,
+          "third": "境",
+          "score": "7-2",
+          "fScore": ["2","0","0","1","1","1","0","2","X"],
+          "tScore": ["0","0","2","0","0","0","0","0","0"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016081362.html",
+          "video": "http://www.asahi.com/koshien/digest/20160813_2d.html"
+        },{
+          "id": "7-3",
+          "time": "13:00",
+          "round": "2回戦",
+          "first": "創志学園",
+          "firstIsHome": true,
+          "third": "盛岡大付",
+          "score": "8-11",
+          "fScore": ["0","3","1","0","0","3","1","0","0"],
+          "tScore": ["0","0","0","4","4","3","0","0","X"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016081363.html",
+          "video": "http://www.asahi.com/koshien/digest/20160813_3d.html"
+        },{
+          "id": "7-4",
+          "time": "15:30",
+          "round": "2回戦",
+          "first": "鳴門",
+          "firstIsHome": true,
+          "third": "智弁学園",
+          "score": "5-2",
+          "fScore": ["0","0","0","0","1","1","0","0","3"],
+          "tScore": ["2","0","0","0","0","0","0","0","0"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016081364.html",
+          "video": "http://www.asahi.com/koshien/digest/20160813_4d.html"
+        }
+      ]
+    },{
+      "date": "2016年08月14日",
+      "games": [
+        {
+          "id": "8-1",
+          "time": "08:00",
+          "round": "2回戦",
+          "first": "山梨学院",
+          "firstIsHome": true,
+          "third": "いなべ総合",
+          "score": "2-7",
+          "fScore": ["0","0","0","0","2","0","0","0","0"],
+          "tScore": ["0","1","0","0","1","0","0","5","X"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016081461.html",
+          "video": "http://www.asahi.com/koshien/digest/20160814_1d.html"
+        },{
+          "id": "8-2",
+          "time": "10:30",
+          "round": "2回戦",
+          "first": "常総学院",
+          "firstIsHome": true,
+          "third": "中京",
+          "score": "8-2",
+          "fScore": ["0","1","1","0","1","2","2","1","0"],
+          "tScore": ["2","0","0","0","0","0","1","0","0"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016081462.html",
+          "video": "http://www.asahi.com/koshien/digest/20160814_2d.html"
+        },{
+          "id": "8-3",
+          "time": "13:00",
+          "round": "2回戦",
+          "first": "東邦",
+          "firstIsHome": false,
+          "third": "八戸学院光星",
+          "score": "10-9",
+          "fScore": ["0","1","2","0","0","0","2","1","5X"],
+          "tScore": ["1","0","3","0","2","0","3","0","0"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016081463.html",
+          "video": "http://www.asahi.com/koshien/digest/20160814_3d.html"
+        },{
+          "id": "8-4",
+          "time": "15:30",
+          "round": "2回戦",
+          "first": "横浜",
+          "firstIsHome": true,
+          "third": "履正社",
+          "score": "1-5",
+          "fScore": ["1","0","0","0","0","0","0","0","0"],
+          "tScore": ["0","5","0","0","0","0","0","0","X"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016081464.html",
+          "video": "http://www.asahi.com/koshien/digest/20160814_4d.html"
+        }
+      ]
+    },{
+      "date": "2016年08月15日",
+      "games": [
+        {
+          "id": "9-1",
+          "time": "09:30",
+          "round": "2回戦",
+          "first": "市和歌山",
+          "firstIsHome": false,
+          "third": "日南学園",
+          "score": "4-6",
+          "fScore": ["0","3","0","0","0","0","1","0","0"],
+          "tScore": ["0","0","1","0","2","2","0","0","1"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016081561.html",
+          "video": "http://www.asahi.com/koshien/digest/20160815_1d.html"
+        },{
+          "id": "9-2",
+          "time": "12:00",
+          "round": "2回戦",
+          "first": "樟南",
+          "firstIsHome": false,
+          "third": "花咲徳栄",
+          "score": "3-6",
+          "fScore": ["0","0","0","1","0","0","0","0","2"],
+          "tScore": ["0","0","0","0","0","4","2","0","0"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016081562.html",
+          "video": "http://www.asahi.com/koshien/digest/20160815_2d.html"
+        },{
+          "id": "9-3",
+          "time": "14:30",
+          "round": "2回戦",
+          "first": "広島新庄",
+          "firstIsHome": false,
+          "third": "富山第一",
+          "score": "7-1",
+          "fScore": ["0","0","1","0","0","2","0","4","X"],
+          "tScore": ["0","0","0","1","0","0","0","0","0"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016081563.html",
+          "video": "http://www.asahi.com/koshien/digest/20160815_3d.html"
+        }
+      ]
+    },{
+      "date": "2016年08月16日",
+      "games": [
+        {
+          "id": "10-1",
+          "time": "08:00",
+          "round": "3回戦",
+          "first": "嘉手納",
+          "firstIsHome": false,
+          "third": "明徳義塾",
+          "score": "5-13",
+          "fScore": ["0","0","0","0","0","0","1","4","0"],
+          "tScore": ["0","0","1","3","1","5","0","3","0"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016081661.html",
+          "video": "http://www.asahi.com/koshien/digest/20160816_1d.html"
+        },{
+          "id": "10-2",
+          "time": "10:30",
+          "round": "3回戦",
+          "first": "秀岳館",
+          "firstIsHome": true,
+          "third": "いなべ総合",
+          "score": "6-1",
+          "fScore": ["0","1","1","0","0","0","0","1","3"],
+          "tScore": ["0","0","0","1","0","0","0","0","0"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016081662.html",
+          "video": "http://www.asahi.com/koshien/digest/20160816_2d.html"
+        },{
+          "id": "10-3",
+          "time": "13:00",
+          "round": "3回戦",
+          "first": "盛岡大付",
+          "firstIsHome": false,
+          "third": "鳴門",
+          "score": "9-11",
+          "fScore": ["1","0","0","0","4","0","0","0","4"],
+          "tScore": ["0","0","0","5","0","0","1","5","0"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016081663.html",
+          "video": "http://www.asahi.com/koshien/digest/20160816_3d.html"
+        },{
+          "id": "10-4",
+          "time": "15:30",
+          "round": "3回戦",
+          "first": "常総学院",
+          "firstIsHome": true,
+          "third": "履正社",
+          "score": "7-4",
+          "fScore": ["2","3","0","0","2","0","0","0","0"],
+          "tScore": ["0","1","0","0","1","1","0","0","1"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016081664.html",
+          "video": "http://www.asahi.com/koshien/digest/20160816_4d.html"
+        }
+      ]
+    },{
+      "date": "2016年08月17日",
+      "games": [
+        {
+          "id": "11-1",
+          "time": "08:00",
+          "round": "3回戦",
+          "first": "東邦",
+          "firstIsHome": false,
+          "third": "聖光学院",
+          "score": "2-5",
+          "fScore": ["0","1","0","0","0","0","0","1","0"],
+          "tScore": ["1","0","0","0","1","2","1","0","0"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016081761.html",
+          "video": "http://www.asahi.com/koshien/digest/20160817_1d.html"
+        },{
+          "id": "11-2",
+          "time": "10:30",
+          "round": "3回戦",
+          "first": "花咲徳栄",
+          "firstIsHome": true,
+          "third": "作新学院",
+          "score": "2-6",
+          "fScore": ["0","0","0","1","0","0","0","1","0"],
+          "tScore": ["0","5","0","0","0","0","0","1","X"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016081762.html",
+          "video": "http://www.asahi.com/koshien/digest/20160817_2d.html"
+        },{
+          "id": "11-3",
+          "time": "13:00",
+          "round": "3回戦",
+          "first": "木更津総合",
+          "firstIsHome": true,
+          "third": "広島新庄",
+          "score": "2-0",
+          "fScore": ["1","0","0","0","0","0","1","0","0"],
+          "tScore": ["0","0","0","0","0","0","0","0","0"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016081763.html",
+          "video": "http://www.asahi.com/koshien/digest/20160817_3d.html"
+        },{
+          "id": "11-4",
+          "time": "15:30",
+          "round": "3回戦",
+          "first": "日南学園",
+          "firstIsHome": true,
+          "third": "北海",
+          "score": "1-4",
+          "fScore": ["1","0","0","0","0","0","0","0","0"],
+          "tScore": ["0","1","0","0","0","0","0","3","X"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016081764.html",
+          "video": "http://www.asahi.com/koshien/digest/20160817_4d.html"
+        }
+      ]
+    },{
+      "date": "2016年08月18日",
+      "games": [
+        {
+          "id": "12-1",
+          "time": "08:00",
+          "round": "準々決勝",
+          "first": "常総学院",
+          "firstIsHome": true,
+          "third": "秀岳館",
+          "score": "1-4",
+          "fScore": ["0","0","0","0","1","0","0","0","0"],
+          "tScore": ["0","1","1","0","0","2","0","0","X"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016081861.html",
+          "video": "http://www.asahi.com/koshien/digest/20160818_1d.html"
+        },{
+          "id": "12-2",
+          "time": "10:30",
+          "round": "準々決勝",
+          "first": "鳴門",
+          "firstIsHome": false,
+          "third": "明徳義塾",
+          "score": "0-3",
+          "fScore": ["0","0","0","0","0","0","0","0","0"],
+          "tScore": ["0","1","0","2","0","0","0","0","0"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016081862.html",
+          "video": "http://www.asahi.com/koshien/digest/20160818_2d.html"
+        },{
+          "id": "12-3",
+          "time": "13:00",
+          "round": "準々決勝",
+          "first": "北海",
+          "firstIsHome": true,
+          "third": "聖光学院",
+          "score": "7-3",
+          "fScore": ["0","2","0","2","2","0","0","1","0"],
+          "tScore": ["3","0","0","0","0","0","0","0","0"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016081863.html",
+          "video": "http://www.asahi.com/koshien/digest/20160818_3d.html"
+        },{
+          "id": "12-4",
+          "time": "15:30",
+          "round": "準々決勝",
+          "first": "作新学院",
+          "firstIsHome": true,
+          "third": "木更津総合",
+          "score": "3-1",
+          "fScore": ["1","0","2","0","0","0","0","0","0"],
+          "tScore": ["0","0","0","0","0","0","1","0","0"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016081864.html",
+          "video": "http://www.asahi.com/koshien/digest/20160818_4d.html"
+        }
+      ]
+    },{
+      "date": "2016年08月20日",
+      "games": [
+        {
+          "id": "13-1",
+          "time": "11:00",
+          "round": "準決勝",
+          "first": "作新学院",
+          "firstIsHome": true,
+          "third": "明徳義塾",
+          "score": "10-2",
+          "fScore": ["2","0","3","3","1","1","0","0","0"],
+          "tScore": ["0","0","1","1","0","0","0","0","0"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016082061.html",
+          "video": "http://www.asahi.com/koshien/digest/20160820_1d.html"
+        },{
+          "id": "13-2",
+          "time": "13:30",
+          "round": "準決勝",
+          "first": "北海",
+          "firstIsHome": false,
+          "third": "秀岳館",
+          "score": "4-3",
+          "fScore": ["0","0","3","0","1","0","0","0","X"],
+          "tScore": ["0","0","0","0","0","0","1","2","0"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016082061.html",
+          "video": "http://www.asahi.com/koshien/digest/20160820_2d.html"
+        }
+      ]
+    },{
+      "date": "2016年08月21日",
+      "games": [
+        {
+          "id": "14-1",
+          "time": "13:00",
+          "round": "決勝",
+          "first": "作新学院",
+          "firstIsHome": true,
+          "third": "北海",
+          "score": "7-1",
+          "fScore": ["0","0","0","5","1","0","1","0","0"],
+          "tScore": ["0","1","0","0","0","0","0","0","0"],
+          "news": "http://www.asahi.com/koshien/text_sokuhou/2016082161.html",
+          "video": "http://www.asahi.com/koshien/digest/20160821_1d.html"
+        }
+      ]
+    }
+  ]
+}
