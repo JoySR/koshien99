@@ -26,7 +26,7 @@
   <div class="section" id="game">
     <h2><i class="fa fa-calendar"></i>日程</h2>
     <ul id="time-table">
-      <li v-for="day in days" :class="isRestDay(day)">
+      <li v-for="day in days" :class="{ rest: day.rest }">
         <span class="date">{{ day.date }}</span>
         <span class="day"> {{ day.weekday }}</span>
       </li>

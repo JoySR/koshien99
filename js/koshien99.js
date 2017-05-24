@@ -8,13 +8,6 @@ var title = new Vue({
 var timeTable = new Vue({
   el: '#time-table',
   data: {
-    isRestDay: function(day) {
-      if (day.rest) {
-        return 'rest';
-      } else {
-        return '';
-      }
-    },
     days: [
       {
         date: '07',
