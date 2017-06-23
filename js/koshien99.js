@@ -1,11 +1,5 @@
-var title = new Vue({
-  el: '#site-title',
-  data: {
-    title: '第99回全国高等学校野球選手権大会'
-  }
-});
-
 var timeTable = new Vue({
+  // TODO: 给定第一天和当天的星期，用程序计算出整个日程表及休息日
   el: '#time-table',
   data: {
     days: [
@@ -71,6 +65,9 @@ var timeTable = new Vue({
         weekday: '日'
       }
     ]
+  },
+  methods: {
+    switchDate: function() {}
   }
 });
 

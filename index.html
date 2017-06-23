@@ -14,7 +14,8 @@
 <body>
 <div class="header">
   <div class="header-wrap">
-    <h1 id="site-title">{{ title }}</h1>
+    <h1 id="site-title">第99回全国高等学校野球選手権大会</h1>
+    <!--<h1 id="site-title">{{ title }}</h1>-->
     <ul class="nav">
       <li><a href="#game"><i class="fa fa-calendar"></i>日程</a></li>
       <li><a href="#reference"><i class="fa fa-book"></i>参考</a></li>
@@ -25,11 +26,28 @@
 <div class="main">
   <div class="section" id="game">
     <h2><i class="fa fa-calendar"></i>日程</h2>
+    <!--<ul id="time-table">-->
+      <!--<li v-for="day in days" v-on:click="switchDate" :class="{ rest: day.rest }">-->
+        <!--<span class="date">{{ day.date }}</span>-->
+        <!--<span class="day"> {{ day.weekday }}</span>-->
+      <!--</li>-->
+    <!--</ul>-->
     <ul id="time-table">
-      <li v-for="day in days" :class="{ rest: day.rest }">
-        <span class="date">{{ day.date }}</span>
-        <span class="day"> {{ day.weekday }}</span>
-      </li>
+      <li><span class="date">07</span><span class="day">日</span></li>
+      <li><span class="date">08</span><span class="day">月</span></li>
+      <li><span class="date">09</span><span class="day">火</span></li>
+      <li><span class="date">10</span><span class="day">水</span></li>
+      <li><span class="date">11</span><span class="day">木</span></li>
+      <li><span class="date">12</span><span class="day">金</span></li>
+      <li><span class="date">13</span><span class="day">土</span></li>
+      <li><span class="date">14</span><span class="day">日</span></li>
+      <li><span class="date">15</span><span class="day">月</span></li>
+      <li><span class="date">16</span><span class="day">火</span></li>
+      <li><span class="date">17</span><span class="day">水</span></li>
+      <li><span class="date">18</span><span class="day">木</span></li>
+      <li class="rest"><span class="date">19</span><span class="day">金</span></li>
+      <li><span class="date">20</span><span class="day">土</span></li>
+      <li><span class="date">21</span><span class="day">日</span></li>
     </ul>
     <div class="message" id="message"></div>
     <div class="today" id="game-list">
@@ -50,21 +68,26 @@
   </div>
   <div class="section" id="reference">
     <h2><i class="fa fa-book"></i>参考</h2>
+    <!--<ul>-->
+      <!--<li v-for="link in links">-->
+        <!--<a :href="link.url">-->
+          <!--<img :src="link.img" :alt="link.content" />-->
+        <!--</a>-->
+      <!--</li>-->
+    <!--</ul>-->
     <ul>
-      <li v-for="link in links">
-        <a :href="link.url">
-          <img :src="link.img" :alt="link.content" />
-        </a>
-      </li>
+      <li><a href="http://www.nhk.or.jp/koushien"><img src="img/nhk_logo.png" alt="NHK Online"></a></li>
+      <li><a href="http://mainichi.jp/koshien/"><img src="img/mbs_logo_s.png" alt="MBS"></a></li>
+      <li><a href="http://www.asahi.com/koshien"><img src="img/asahi_logo.png" alt="朝日新聞"></a></li>
     </ul>
   </div>
 </div>
 <div class="footer">
   <p>&copy;&nbsp; <a href="http://joysr.com">Hanna</a> 2017.05.23 -  </p>
 </div>
-<script src="js/vue.js"></script>
+<!--<script src="js/vue.js"></script>-->
 <script src="js/jquery.js"></script>
 <script src="js/game.js"></script>
-<script src="js/koshien99.js"></script>
+<!--<script src="js/koshien99.js"></script>-->
 </body>
 </html>
