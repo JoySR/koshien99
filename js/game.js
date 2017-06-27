@@ -6,50 +6,35 @@
 
 //预定义日期数组,如果因天气等原因而延期,可在此处修改调整后的日期
 var dateArr = [
-	"2016年08月07日",
-	"2016年08月08日",
-	"2016年08月09日",
-	"2016年08月10日",
-	"2016年08月11日",
-	"2016年08月12日",
-	"2016年08月13日",
-	"2016年08月14日",
-	"2016年08月15日",
-	"2016年08月16日",
-	"2016年08月17日",
-	"2016年08月18日",
-	"2016年08月19日",
-	"2016年08月20日",
-	"2016年08月21日"
+	"2017年08月07日",
+	"2017年08月08日",
+	"2017年08月09日",
+	"2017年08月10日",
+	"2017年08月11日",
+	"2017年08月12日",
+	"2017年08月13日",
+	"2017年08月14日",
+	"2017年08月15日",
+	"2017年08月16日",
+	"2017年08月17日",
+	"2017年08月18日",
+	"2017年08月19日",
+	"2017年08月20日",
+	"2017年08月21日"
 ];
 
 var restDay = dateArr[12];
 
 /* 获取数据 */
 
-var $schools,$schedule;
+var $schools;
+var $schedule;
 
 $.getJSON("./data/game.json", function(data) {
 	$schedule = data["schedule"];
 	$schools = data["schools"];
 	onloadShow();
-
-	//将两个json文件合并后,只需要获取一次数据即可.保留而不是删除是因为此前没有嵌套导致$schools在执行getPrefecture()函数时还没有完成,以致页面加载有bug
-	//$.getJSON("./data/school.json", function(data) {
-	//	$schools = data["schools"];
-	//	onloadShow();
-	//});
 });
-
-// $.getJSON("./data/schedule.json", function(data) {
-// 	$schedule = data["schedule"];
-// 	console.log("School");
-// 	$.getJSON("./data/schools.json", function(data) {
-// 		$schools = data["schools"];
-// 		console.log("Schedule");
-// 		onloadShow();
-// 	})
-// });
 
 /* 简单函数 */
 
@@ -95,28 +80,12 @@ function getTimeNow() {
 }
 
 function getGameId(id) {
-	return id.substr(1,id.length-1);
+	return id.substr(1, id.length-1);
 }
 
 function closeCard() {
 	$("#card-bg").addClass("hide");
 }
-
-/* 更好的实现方法: 找到了 :D */
-//function getGameInfoOrDate(id, type) {
-//	for (var $i = 0; $i < $schedule.length; $i++) {
-//		for (var $j = 0; $j < $schedule[$i]["games"].length; $j++) {
-//			if (id === $schedule[$i]["games"][$j]["id"]) {
-//				alert("i: " + $i + " j: " + $j);
-//				if (type === "info") {
-//					return $schedule[$i]["games"][$j];
-//				} else if (type === "date") {
-//					return $schedule[$i]["date"];
-//				}
-//			}
-//		}
-//	}
-//}
 
 function getGameInfoOrDate(id, type) {
 	var i = id.split("-")[0] - 1;
