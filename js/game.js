@@ -23,6 +23,8 @@ var dateArr = [
 	"2017年08月21日"
 ];
 
+var startDate = [2017, 7, 7];
+
 var restDay = dateArr[12];
 
 /* 获取数据 */
@@ -68,6 +70,12 @@ function getDateToday() {
 	return $year + "年" + $month + "月" + $date + "日";
 }
 
+function isBeforeStartDate() {
+  var now = new Date();
+  var startDate = new Date(startDate[0], startDate[1], startDate[2]);
+  return now < startDate;
+}
+
 function getTimeNow() {
 	var $now = new Date();
 	var $hour = $now.getUTCHours();
@@ -98,18 +106,19 @@ function getGameInfoOrDate(id, type) {
 }
 
 function emptyList() {
-	var $gameList = $("#game-list");
-	$gameList.empty();
+	$("#game-list").empty();
 }
 
 //检查当前时间,跳转到当前正在(或即将)进行的比赛并高亮当前的比赛时间
 //TODO: 优化
 function highlightCurrentGame(){
-	var $videoURL = $(".after-game .video");
 	//休养日无高亮
-	if (getDateToday() === restDay) return;
+	if (getDateToday() === restDay || isBeforeStartDate()) return;
+
 	var $timeNow = getTimeNow();
 	var $time = $(".info .time");
+	var $videoURL = $(".after-game .video");
+
 	//决赛日
 	if ($time.length === 1 && ($videoURL.eq(0).attr("href") === "")) {
 		highlight(0)
@@ -417,7 +426,6 @@ function showSingleCard(school) {
 
 				$cardContent.append(cardGame);
 			}
-
 		}
 	}
 
@@ -437,7 +445,6 @@ function jumpToDetail(id) {
 
 	//高亮当天日期
 	highlightDate(theDate - 1);
-
 
 	//来自<关于锚点跳转及jQuery下相关操作与插件>
 	//-60: 让出header占据的60px,使目标内容可以完整显示而不是被header盖住
@@ -468,7 +475,6 @@ $("#time-table").on("click", "li", function() {
 	} else {
 		$("#message").append('<h3 style="color: orange; margin: 20px auto;">今日は休養日</h3><h3 style="margin: 20px auto;">明日の試合</h3>');
 		showTodaysGame($schedule[12]);
-		// $("#game-list").append('<h3 style="color: orange; margin: 20px auto;">今日は休養日</h3>');
 	}
 	var $todaysDate = new Date();
 	var $thisDate = $todaysDate.getDate();

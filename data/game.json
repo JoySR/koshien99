@@ -12,7 +12,7 @@
       "prefecture": "南北海道",
       "prefecture-id": "shokkaido",
       "name": "",
-      "count": "2年連続37回目",
+      "count": "",
       "games":[]
     }, {
       "id": 3,
@@ -47,21 +47,21 @@
       "prefecture": "宮城",
       "prefecture-id": "miyagi",
       "name": "",
-      "count": "７年ぶり22回目",
+      "count": "",
       "games": []
     }, {
       "id": 8,
       "prefecture": "福島",
       "prefecture-id": "fukushima",
       "name": "",
-      "count": "10年連続13回目",
+      "count": "",
       "games":[]
     }, {
       "id": 9,
       "prefecture": "茨城",
       "prefecture-id": "ibaraki",
       "name": "",
-      "count": "３年ぶり16回目",
+      "count": "",
       "games":[]
     }, {
       "id": 10,
