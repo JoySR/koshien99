@@ -70,6 +70,12 @@ img { border: none; }
     font-size: 24px;
 }
 
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 20px;
+    }
+}
+
 .nav {
     float: right;
 }

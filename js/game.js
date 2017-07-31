@@ -6,50 +6,37 @@
 
 //预定义日期数组,如果因天气等原因而延期,可在此处修改调整后的日期
 var dateArr = [
-	"2016年08月07日",
-	"2016年08月08日",
-	"2016年08月09日",
-	"2016年08月10日",
-	"2016年08月11日",
-	"2016年08月12日",
-	"2016年08月13日",
-	"2016年08月14日",
-	"2016年08月15日",
-	"2016年08月16日",
-	"2016年08月17日",
-	"2016年08月18日",
-	"2016年08月19日",
-	"2016年08月20日",
-	"2016年08月21日"
+	"2017年08月07日",
+	"2017年08月08日",
+	"2017年08月09日",
+	"2017年08月10日",
+	"2017年08月11日",
+	"2017年08月12日",
+	"2017年08月13日",
+	"2017年08月14日",
+	"2017年08月15日",
+	"2017年08月16日",
+	"2017年08月17日",
+	"2017年08月18日",
+	"2017年08月19日",
+	"2017年08月20日",
+	"2017年08月21日"
 ];
+
+var startDate = [2017, 7, 7];
 
 var restDay = dateArr[12];
 
 /* 获取数据 */
 
-var $schools,$schedule;
+var $schools;
+var $schedule;
 
 $.getJSON("./data/game.json", function(data) {
 	$schedule = data["schedule"];
 	$schools = data["schools"];
 	onloadShow();
-
-	//将两个json文件合并后,只需要获取一次数据即可.保留而不是删除是因为此前没有嵌套导致$schools在执行getPrefecture()函数时还没有完成,以致页面加载有bug
-	//$.getJSON("./data/school.json", function(data) {
-	//	$schools = data["schools"];
-	//	onloadShow();
-	//});
 });
-
-// $.getJSON("./data/schedule.json", function(data) {
-// 	$schedule = data["schedule"];
-// 	console.log("School");
-// 	$.getJSON("./data/schools.json", function(data) {
-// 		$schools = data["schools"];
-// 		console.log("Schedule");
-// 		onloadShow();
-// 	})
-// });
 
 /* 简单函数 */
 
@@ -83,6 +70,12 @@ function getDateToday() {
 	return $year + "年" + $month + "月" + $date + "日";
 }
 
+function isBeforeStartDate() {
+  var now = new Date();
+  var startDate = new Date(startDate[0], startDate[1], startDate[2]);
+  return now < startDate;
+}
+
 function getTimeNow() {
 	var $now = new Date();
 	var $hour = $now.getUTCHours();
@@ -95,28 +88,12 @@ function getTimeNow() {
 }
 
 function getGameId(id) {
-	return id.substr(1,id.length-1);
+	return id.substr(1, id.length-1);
 }
 
 function closeCard() {
 	$("#card-bg").addClass("hide");
 }
-
-/* 更好的实现方法: 找到了 :D */
-//function getGameInfoOrDate(id, type) {
-//	for (var $i = 0; $i < $schedule.length; $i++) {
-//		for (var $j = 0; $j < $schedule[$i]["games"].length; $j++) {
-//			if (id === $schedule[$i]["games"][$j]["id"]) {
-//				alert("i: " + $i + " j: " + $j);
-//				if (type === "info") {
-//					return $schedule[$i]["games"][$j];
-//				} else if (type === "date") {
-//					return $schedule[$i]["date"];
-//				}
-//			}
-//		}
-//	}
-//}
 
 function getGameInfoOrDate(id, type) {
 	var i = id.split("-")[0] - 1;
@@ -129,18 +106,19 @@ function getGameInfoOrDate(id, type) {
 }
 
 function emptyList() {
-	var $gameList = $("#game-list");
-	$gameList.empty();
+	$("#game-list").empty();
 }
 
 //检查当前时间,跳转到当前正在(或即将)进行的比赛并高亮当前的比赛时间
 //TODO: 优化
 function highlightCurrentGame(){
-	var $videoURL = $(".after-game .video");
 	//休养日无高亮
-	if (getDateToday() === restDay) return;
+	if (getDateToday() === restDay || isBeforeStartDate()) return;
+
 	var $timeNow = getTimeNow();
 	var $time = $(".info .time");
+	var $videoURL = $(".after-game .video");
+
 	//决赛日
 	if ($time.length === 1 && ($videoURL.eq(0).attr("href") === "")) {
 		highlight(0)
@@ -448,7 +426,6 @@ function showSingleCard(school) {
 
 				$cardContent.append(cardGame);
 			}
-
 		}
 	}
 
@@ -468,7 +445,6 @@ function jumpToDetail(id) {
 
 	//高亮当天日期
 	highlightDate(theDate - 1);
-
 
 	//来自<关于锚点跳转及jQuery下相关操作与插件>
 	//-60: 让出header占据的60px,使目标内容可以完整显示而不是被header盖住
@@ -499,7 +475,6 @@ $("#time-table").on("click", "li", function() {
 	} else {
 		$("#message").append('<h3 style="color: orange; margin: 20px auto;">今日は休養日</h3><h3 style="margin: 20px auto;">明日の試合</h3>');
 		showTodaysGame($schedule[12]);
-		// $("#game-list").append('<h3 style="color: orange; margin: 20px auto;">今日は休養日</h3>');
 	}
 	var $todaysDate = new Date();
 	var $thisDate = $todaysDate.getDate();
