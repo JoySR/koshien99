@@ -4,43 +4,43 @@
       "id": 1,
       "prefecture": "北北海道",
       "prefecture-id": "nhokkaido",
-      "name": "",
-      "count": "",
+      "name": "滝川西",
+      "count": "１９年ぶり３回目",
       "games":[""]
     }, {
       "id": 2,
       "prefecture": "南北海道",
       "prefecture-id": "shokkaido",
-      "name": "",
-      "count": "",
+      "name": "北海",
+      "count": "３年連続３８回目",
       "games":[]
     }, {
       "id": 3,
       "prefecture": "青森",
       "prefecture-id": "aomori",
-      "name": "",
-      "count": "",
+      "name": "青森山田",
+      "count": "８年ぶり１１回目",
       "games": []
     }, {
       "id": 4,
       "prefecture": "岩手",
       "prefecture-id": "iwate",
-      "name": "",
-      "count": "",
+      "name": "盛岡大付",
+      "count": "２年連続１０回目",
       "games":[]
     }, {
       "id": 5,
       "prefecture": "秋田",
       "prefecture-id": "akita",
-      "name": "",
-      "count": "",
+      "name": "明桜",
+      "count": "８年ぶり９回目",
       "games": []
     }, {
       "id": 6,
       "prefecture": "山形",
       "prefecture-id": "yamagata",
-      "name": "",
-      "count": "",
+      "name": "日大山形",
+      "count": "４年ぶり１７回目",
       "games": []
     }, {
       "id": 7,
@@ -53,295 +53,295 @@
       "id": 8,
       "prefecture": "福島",
       "prefecture-id": "fukushima",
-      "name": "",
-      "count": "",
+      "name": "聖光学院",
+      "count": "１１年連続１４回目",
       "games":[]
     }, {
       "id": 9,
       "prefecture": "茨城",
       "prefecture-id": "ibaraki",
-      "name": "",
-      "count": "",
+      "name": "土浦日大",
+      "count": "３１年ぶり３回目",
       "games":[]
     }, {
       "id": 10,
       "prefecture": "栃木",
       "prefecture-id": "tochigi",
-      "name": "",
-      "count": "",
+      "name": "作新学院",
+      "count": "７年連続１３回目",
       "games":[]
     }, {
       "id": 11,
       "prefecture": "群馬",
       "prefecture-id": "gunma",
-      "name": "",
-      "count": "",
+      "name": "前橋育英",
+      "count": "２年連続３回目",
       "games": []
     }, {
       "id": 12,
       "prefecture": "埼玉",
       "prefecture-id": "saitama",
-      "name": "",
-      "count": "",
+      "name": "花咲徳栄",
+      "count": "３年連続５回目",
       "games":[]
     }, {
       "id": 13,
       "prefecture": "千葉",
       "prefecture-id": "chiba",
-      "name": "",
-      "count": "",
+      "name": "木更津総合",
+      "count": "２年連続６回目",
       "games":[]
     }, {
       "id": 14,
       "prefecture": "東東京",
       "prefecture-id": "etokyo",
-      "name": "",
-      "count": "",
+      "name": "二松学舎大付",
+      "count": "３年ぶり２回目",
       "games": []
     }, {
       "id": 15,
       "prefecture": "西東京",
       "prefecture-id": "wtokyo",
-      "name": "",
-      "count": "",
+      "name": "東海大菅生",
+      "count": "１７年ぶり３回目",
       "games": []
     }, {
       "id": 16,
       "prefecture": "神奈川",
       "prefecture-id": "kanagawa",
-      "name": "",
-      "count": "",
+      "name": "横浜",
+      "count": "２年連続１７回目",
       "games": []
     }, {
       "id": 17,
       "prefecture": "新潟",
       "prefecture-id": "niigata",
-      "name": "",
-      "count": "",
+      "name": "日本文理",
+      "count": "３年ぶり９回目",
       "games": []
     }, {
       "id": 18,
       "prefecture": "長野",
       "prefecture-id": "nagano",
-      "name": "",
-      "count": "",
+      "name": "松商学園",
+      "count": "９年ぶり３６回目",
       "games": []
     }, {
       "id": 19,
       "prefecture": "山梨",
       "prefecture-id": "yamanashi",
-      "name": "",
-      "count": "",
+      "name": "山梨学院",
+      "count": "２年連続７回目",
       "games": []
     }, {
       "id": 20,
       "prefecture": "静岡",
       "prefecture-id": "shizuoka",
-      "name": "",
-      "count": "",
+      "name": "藤枝明誠",
+      "count": "初出場",
       "games": []
     }, {
       "id": 21,
       "prefecture": "愛知",
       "prefecture-id": "aichi",
-      "name": "",
-      "count": "",
+      "name": "中京大中京",
+      "count": "２年ぶり２８回目",
       "games":[]
     }, {
       "id": 22,
       "prefecture": "岐阜",
       "prefecture-id": "gifu",
-      "name": "",
-      "count": "",
+      "name": "大垣日大",
+      "count": "３年ぶり４回目",
       "games": []
     }, {
       "id": 23,
       "prefecture": "三重",
       "prefecture-id": "mie",
-      "name": "",
-      "count": "",
+      "name": "津田学園",
+      "count": "初出場",
       "games":[]
     }, {
       "id": 24,
       "prefecture": "富山",
       "prefecture-id": "toyama",
-      "name": "",
-      "count": "",
+      "name": "高岡商",
+      "count": "２年ぶり１８回目",
       "games": []
     }, {
       "id": 25,
       "prefecture": "石川",
       "prefecture-id": "ishikawa",
-      "name": "",
-      "count": "",
+      "name": "日本航空石川",
+      "count": "８年ぶり２回目",
       "games": []
     }, {
       "id": 26,
       "prefecture": "福井",
       "prefecture-id": "fukui",
-      "name": "",
-      "count": "",
+      "name": "坂井",
+      "count": "初出場",
       "games": []
     }, {
       "id": 27,
       "prefecture": "滋賀",
       "prefecture-id": "shiga",
-      "name": "",
-      "count": "",
+      "name": "彦根東",
+      "count": "４年ぶり２回目",
       "games": []
     }, {
       "id": 28,
       "prefecture": "京都",
       "prefecture-id": "kyoto",
-      "name": "",
-      "count": "",
+      "name": "京都成章",
+      "count": "１９年ぶり３回目",
       "games": []
     }, {
       "id": 29,
       "prefecture": "大阪",
       "prefecture-id": "osaka",
-      "name": "",
-      "count": "",
+      "name": "大阪桐蔭",
+      "count": "３年ぶり９回目",
       "games":[]
     }, {
       "id": 30,
       "prefecture": "兵庫",
       "prefecture-id": "hyogo",
-      "name": "",
-      "count": "",
+      "name": "神戸国際大付",
+      "count": "３年ぶり２回目",
       "games": []
     }, {
       "id": 31,
       "prefecture": "奈良",
       "prefecture-id": "nara",
-      "name": "",
-      "count": "",
+      "name": "天理",
+      "count": "２年ぶり２８回目",
       "games": []
     }, {
       "id": 32,
       "prefecture": "和歌山",
       "prefecture-id": "wakayama",
-      "name": "",
-      "count": "",
+      "name": "智弁和歌山",
+      "count": "２年ぶり２２回目",
       "games": []
     }, {
       "id": 33,
       "prefecture": "岡山",
       "prefecture-id": "okayama",
-      "name": "",
-      "count": "",
+      "name": "おかやま山陽",
+      "count": "初出場",
       "games": []
     }, {
       "id": 34,
       "prefecture": "広島",
       "prefecture-id": "hiroshima",
-      "name": "",
-      "count": "",
+      "name": "広陵",
+      "count": "３年ぶり２２回目",
       "games":[]
     }, {
       "id": 35,
       "prefecture": "鳥取",
       "prefecture-id": "tottori",
-      "name": "",
-      "count": "",
+      "name": "米子松蔭",
+      "count": "１７年ぶり３回目",
       "games": []
     }, {
       "id": 36,
       "prefecture": "島根",
       "prefecture-id": "shimane",
-      "name": "",
-      "count": "",
+      "name": "開星",
+      "count": "３年ぶり１０回目",
       "games": []
     }, {
       "id": 37,
       "prefecture": "山口",
       "prefecture-id": "yamaguchi",
-      "name": "",
-      "count": "",
+      "name": "下関国際",
+      "count": "初出場",
       "games": []
     }, {
       "id": 38,
       "prefecture": "香川",
       "prefecture-id": "kagawa",
-      "name": "",
-      "count": "",
+      "name": "三本松",
+      "count": "２４年ぶり３回目",
       "games": []
     }, {
       "id": 39,
       "prefecture": "徳島",
       "prefecture-id": "tokushima",
-      "name": "",
-      "count": "",
+      "name": "鳴門渦潮",
+      "count": "９年ぶり７回目",
       "games":[]
     }, {
       "id": 40,
       "prefecture": "愛媛",
       "prefecture-id": "ehime",
-      "name": "",
-      "count": "",
+      "name": "済美",
+      "count": "４年ぶり５回目",
       "games": []
     }, {
       "id": 41,
       "prefecture": "高知",
       "prefecture-id": "kochi",
-      "name": "",
-      "count": "",
+      "name": "明徳義塾",
+      "count": "８年連続１９回目",
       "games":[]
     }, {
       "id": 42,
       "prefecture": "福岡",
       "prefecture-id": "fukuoka",
-      "name": "",
-      "count": "",
+      "name": "東筑",
+      "count": "２１年ぶり６回目",
       "games": []
     }, {
       "id": 43,
       "prefecture": "佐賀",
       "prefecture-id": "saga",
-      "name": "",
-      "count": "",
+      "name": "早稲田佐賀",
+      "count": "初出場",
       "games": []
     }, {
       "id": 44,
       "prefecture": "長崎",
       "prefecture-id": "nagasaki",
-      "name": "",
-      "count": "",
+      "name": "波佐見",
+      "count": "１６年ぶり３回目",
       "games": []
     }, {
       "id": 45,
       "prefecture": "熊本",
       "prefecture-id": "kumamoto",
-      "name": "",
-      "count": "",
+      "name": "秀岳館",
+      "count": "２年連続３回目",
       "games":[]
     }, {
       "id": 46,
       "prefecture": "大分",
       "prefecture-id": "oita",
-      "name": "",
-      "count": "",
+      "name": "明豊",
+      "count": "２年ぶり６回目",
       "games": []
     }, {
       "id": 47,
       "prefecture": "宮崎",
       "prefecture-id": "miyazaki",
-      "name": "",
-      "count": "",
+      "name": "聖心ウルスラ",
+      "count": "１２年ぶり２回目",
       "games":[]
     }, {
       "id": 48,
       "prefecture": "鹿児島",
       "prefecture-id": "kagoshima",
-      "name": "",
-      "count": "",
+      "name": "神村学園",
+      "count": "５年ぶり４回目",
       "games": []
     }, {
       "id": 49,
       "prefecture": "沖縄",
       "prefecture-id": "okinawa",
-      "name": "",
-      "count": "",
+      "name": "興南",
+      "count": "２年ぶり１１回目",
       "games":[]
     }
   ],
