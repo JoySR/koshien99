@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="第99回全国高等学校野球選手権大会">
+  <meta name="keywords" content="第99回全国高等学校野球選手権大会,野球,高校野球,甲子園,Koshien,Baseball">
+  <meta name="author" content="Hanna">
+  <title>第99回全国高等学校野球選手権大会</title>
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <link rel='stylesheet' href='/css/base.css' />
+</head>
+<body>
+<div class="header">
+  <div class="header-wrap">
+    <h1>第99回全国高等学校野球選手権大会</h1>
+    <ul class="nav">
+      <li><a href="#game"><i class="fa fa-calendar"></i>日程</a></li>
+      <li><a href="#reference"><i class="fa fa-book"></i>参考</a></li>
+    </ul>
+    <div class="toggle-nav hide"><i class="fa fa-navicon"></i></div>
+  </div>
+</div>
+
+<div class="main">
+  <div class="section" id="game">
+    <h2><i class="fa fa-calendar"></i>日程</h2>
+    <ul id="time-table">
+      <!-- TODO: 想想怎么添加!!!休息日!!! -->
+      <% for(var d = 0; d < dateArray.length; d++){ %>
+        <li><span class="date"><%= dateArray[d].day %></span><span class="day"><%= dateArray[d].weekday %></span></li>
+      <% } %>
+      <!--<li><span class="date">08</span><span class="day">月</span></li>-->
+      <!--<li><span class="date">09</span><span class="day">火</span></li>-->
+      <!--<li><span class="date">10</span><span class="day">水</span></li>-->
+      <!--<li><span class="date">11</span><span class="day">木</span></li>-->
+      <!--<li><span class="date">12</span><span class="day">金</span></li>-->
+      <!--<li><span class="date">13</span><span class="day">土</span></li>-->
+      <!--<li><span class="date">14</span><span class="day">日</span></li>-->
+      <!--<li><span class="date">15</span><span class="day">月</span></li>-->
+      <!--<li><span class="date">16</span><span class="day">火</span></li>-->
+      <!--<li><span class="date">17</span><span class="day">水</span></li>-->
+      <!--<li><span class="date">18</span><span class="day">木</span></li>-->
+      <!--<li><span class="date">19</span><span class="day">金</span></li>-->
+      <!--<li class="rest"><span class="date">20</span><span class="day">土</span></li>-->
+      <!--<li><span class="date">21</span><span class="day">日</span></li>-->
+      <!--<li><span class="date">22</span><span class="day">月</span></li>-->
+    </ul>
+    <div class="message" id="message"></div>
+    <div class="today" id="game-list">
+      <% for(var i = 0; i < overview.length; i++){ %>
+      <div id="<%= overview[i].date %>" class="singleDate">
+        <% for(var j = 0; j < overview[i].games.length; j++){ %>
+        <div class="single-game" id="<%= overview[i].games[j].gameId %>">
+          <div class="school-school">
+            <div class="info clearfix">
+              <div class="round-wrap">
+                <i class="fa fa-bullhorn"></i>
+                <span class="round"><%= overview[i].games[j].round %></span>
+              </div>
+              <div class="time-wrap">
+                <i class="fa fa-clock-o"></i>
+                <span class="time"><%= overview[i].games[j].time %></span>
+              </div>
+            </div>
+            <p class="first">
+              <span class="name"><%= overview[i].games[j].game.first.name %></span>
+              <span class="final-score"><%= overview[i].games[j].game.firstScore %></span>
+            </p>
+            <span class="vs">-</span>
+            <p class="third">
+              <span class="final-score"><%= overview[i].games[j].game.thirdScore %></span>
+              <span class="name"><%= overview[i].games[j].game.third.name %></span>
+            </p>
+          </div>
+          <table class="scoreboard hide">
+            <tbody>
+            <tr class="home">
+            </tr>
+            <tr class="visit">
+            </tr>
+            </tbody>
+          </table>
+          <div class="after-game hide">
+            <a href="<%= overview[i].games[j].news %>" class="news">
+              <i class="fa fa-link"></i>速報
+            </a>
+            <a href="<%= overview[i].games[j].video %>" class="video">
+              <i class="fa fa-video-camera"></i>ビデオ
+            </a>
+          </div>
+          <div class="show-more">詳細<span class="triangle-to-bottom"></span></div>
+        </div>
+        <% } %>
+      </div>
+      <% } %>
+    </div><!-- #game-list -->
+    <div class="hide" id="card-bg">
+      <div class="card-cover"></div>
+      <div class="single-card">
+        <div class="card-header clearfix">
+          <h3 id="school-name"><i class="fa fa-university"></i></h3>
+          <span id="school-prefecture"></span>
+          <p id="school-count"><i class="fa fa-flag"></i></p>
+          <span id="close"><i class="fa fa-close"></i></span>
+        </div>
+        <table id="card-content">
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="section" id="reference">
+    <h2><i class="fa fa-book"></i>参考</h2>
+    <ul>
+      <li><a href="http://www.nhk.or.jp/koushien"><img src="/images/nhk_logo.png" alt="NHK Online"></a></li>
+      <li><a href="http://mainichi.jp/koshien/"><img src="/images/mbs_logo_s.png" alt="MBS"></a></li>
+      <li><a href="http://www.asahi.com/koshien"><img src="/images/asahi_logo.png" alt="朝日新聞"></a></li>
+    </ul>
+  </div>
+</div>
+<div class="footer">
+  <p>&copy;&nbsp; <a href="https://joysr.com">Hanna</a> 2016.08.04 - </p>
+</div>
+<script src="/js/jquery.js"></script>
+<script src="/js/app.js"></script>
+</body>
+</html>
