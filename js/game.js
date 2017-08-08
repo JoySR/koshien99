@@ -6,7 +6,6 @@
 
 //预定义日期数组,如果因天气等原因而延期,可在此处修改调整后的日期
 var dateArr = [
-	"2017年08月07日",
 	"2017年08月08日",
 	"2017年08月09日",
 	"2017年08月10日",
@@ -20,10 +19,11 @@ var dateArr = [
 	"2017年08月18日",
 	"2017年08月19日",
 	"2017年08月20日",
-	"2017年08月21日"
+	"2017年08月21日",
+	"2017年08月22日"
 ];
 
-var startDate = [2017, 7, 7];
+var startDate = [2017, 7, 8];
 
 var restDay = dateArr[12];
 
@@ -40,12 +40,26 @@ $.getJSON("./data/game.json", function(data) {
 
 /* 简单函数 */
 
-function getPrefecture(name) {
-	for (var i = 0; i < $schools.length; i++) {
-		if ($schools[i]["name"] === name) {
-			return $schools[i]["prefecture"];
-		}
+function getSchoolName(id) {
+  var school = $schools.filter(function(school) {
+  	return school.id === id;
+  });
+	if (school[0]) {
+  	return school[0].name;
+	} else {
+    return '';
 	}
+}
+
+function getPrefecture(id) {
+  var school = $schools.filter(function(school) {
+    return school.id === id;
+  });
+  if (school[0]) {
+  	return school[0].prefecture;
+  } else {
+    return '';
+  }
 }
 
 function getScoreList(scoreArr) {
@@ -70,10 +84,10 @@ function getDateToday() {
 	return $year + "年" + $month + "月" + $date + "日";
 }
 
-function isBeforeStartDate() {
+function isBeforeStartDate(startDate) {
   var now = new Date();
-  var startDate = new Date(startDate[0], startDate[1], startDate[2]);
-  return now < startDate;
+  var start = new Date(startDate[0], startDate[1], startDate[2]);
+  return now < start;
 }
 
 function getTimeNow() {
@@ -113,7 +127,7 @@ function emptyList() {
 //TODO: 优化
 function highlightCurrentGame(){
 	//休养日无高亮
-	if (getDateToday() === restDay || isBeforeStartDate()) return;
+	if (getDateToday() === restDay || isBeforeStartDate(startDate)) return;
 
 	var $timeNow = getTimeNow();
 	var $time = $(".info .time");
@@ -242,10 +256,10 @@ function showTodaysGame(data) {
 		var $gameId = $elem["id"];
 		var $gameRound = $elem["round"];
 		var $gameTime = $elem["time"];
-		var $first = $elem["first"]; //一垒侧
-		var $firstPrefecture = getPrefecture($first);
-		var $third = $elem["third"]; //三垒侧
-		var $thirdPrefecture = getPrefecture($third);
+		var $first = getSchoolName($elem["first"]); //一垒侧
+		var $firstPrefecture = getPrefecture($elem["first"]);
+		var $third = getSchoolName($elem["third"]); //三垒侧
+		var $thirdPrefecture = getPrefecture($elem["third"]);
 		var $score = $elem["score"]; //最终比分: X-X
 		var $finalScore = $score.split("-");
 		var $fScore = $elem["fScore"]; //数组.一垒侧学校每局分数
@@ -347,9 +361,9 @@ function onloadShow() {
 	var $today = getDateToday();
 	emptyList();
 	if ($today < dateArr[0]) { //大会开赛前
-		$("#message").append('<h3 style="color: orange; margin: 20px auto;">大会前</h3><h3 style="margin: 20px auto;">第一日の試合</h3>');
+		$("#message").append('<h3 style="color: orange; margin: 20px auto;">大会前（今日は' + getDateToday() + '），抽選会は8月4日に行います。</h3><h3 style="margin: 20px auto;">第一日の試合</h3>');
 		showTodaysGame($schedule[0]);
-	} else if ($today == dateArr[12]) { //休养日
+	} else if ($today === dateArr[12]) { //休养日
 		$("#game-list").append('<h3 style="color: orange; margin: 20px auto;">今日は休養日</h3><h3 style="margin: 20px auto;">明日の試合</h3>');
 		showTodaysGame($schedule[12]);
 	} else if ($today > dateArr[11]) { //大会结束后
