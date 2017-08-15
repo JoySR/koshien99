@@ -20,12 +20,14 @@ var dateArr = [
 	"2017年08月19日",
 	"2017年08月20日",
 	"2017年08月21日",
-	"2017年08月22日"
+	"2017年08月22日",
+	"2017年08月23日"
 ];
 
 var startDate = [2017, 7, 8];
 
-var restDay = dateArr[12];
+var restDay = dateArr[13];
+var cancelDay = [dateArr[7]];
 
 /* 获取数据 */
 
@@ -40,20 +42,9 @@ $.getJSON("./data/game.json", function(data) {
 
 /* 简单函数 */
 
-function getSchoolName(id) {
+function getPrefecture(name) {
   var school = $schools.filter(function(school) {
-  	return school.id === id;
-  });
-	if (school[0]) {
-  	return school[0].name;
-	} else {
-    return '';
-	}
-}
-
-function getPrefecture(id) {
-  var school = $schools.filter(function(school) {
-    return school.id === id;
+    return school.name === name;
   });
   if (school[0]) {
   	return school[0].prefecture;
@@ -256,9 +247,9 @@ function showTodaysGame(data) {
 		var $gameId = $elem["id"];
 		var $gameRound = $elem["round"];
 		var $gameTime = $elem["time"];
-		var $first = getSchoolName($elem["first"]); //一垒侧
+		var $first = $elem["first"]; //一垒侧
 		var $firstPrefecture = getPrefecture($elem["first"]);
-		var $third = getSchoolName($elem["third"]); //三垒侧
+		var $third = $elem["third"]; //三垒侧
 		var $thirdPrefecture = getPrefecture($elem["third"]);
 		var $score = $elem["score"]; //最终比分: X-X
 		var $finalScore = $score.split("-");
@@ -417,7 +408,7 @@ function showSingleCard(school) {
 				var $sThird = $gameInfo["third"];
 				var $sScore = $gameInfo["score"];
 				var $sRawDate = getGameInfoOrDate($sGameId, "date");
-				var $sDate = "(" + $sRawDate[5] + "/" + $sRawDate[7] + $sRawDate[8] + ")";
+				var $sDate = "(" + $sRawDate[5] + $sRawDate[6] + "/" + $sRawDate[8] + $sRawDate[9] + ")";
 
 				var cardGame = $('<tr>' +
 					'<td>' +
@@ -428,7 +419,7 @@ function showSingleCard(school) {
 					'<td class="score">' +
 					'<span class="first-score">' + $sScore.split("-")[0] + '</span>' +
 					'<span class="vs">-</span>' +
-					'<span class="third-score">' + $sScore.split("-")[1] + '</span>' +
+					'<span class="third-score">' + ($sScore.split("-")[1] || "") + '</span>' +
 					'</td>' +
 					'<td>' +
 					'<span class="third-name">' + $sThird + '</span>' +
