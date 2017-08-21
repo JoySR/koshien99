@@ -227,12 +227,11 @@ function showTodaysGame(data) {
 		}
 	}
 
-	// 1/4决赛当天有4场比赛,半决赛当天2场,决赛当天1场,其他时间3场.
-	if($date === dateArr[0] || $date === dateArr[4] || $date === dateArr[8]) {
+	if($date === dateArr[0] || $date === dateArr[4] || $date === dateArr[9]) {
 		appendSingleGame(3);
-	} else if ($date === dateArr[13]) {
-		appendSingleGame(2);
 	} else if ($date === dateArr[14]) {
+		appendSingleGame(2);
+	} else if ($date === dateArr[15]) {
 		appendSingleGame(1);
 	} else {
 		appendSingleGame(4);
@@ -350,16 +349,18 @@ function showTodaysGame(data) {
 
 function onloadShow() {
 	var $today = getDateToday();
+  console.log($today, 'today');
 	emptyList();
 	if ($today < dateArr[0]) { //大会开赛前
 		$("#message").append('<h3 style="color: orange; margin: 20px auto;">大会前（今日は' + getDateToday() + '），抽選会は8月4日に行います。</h3><h3 style="margin: 20px auto;">第一日の試合</h3>');
 		showTodaysGame($schedule[0]);
-	} else if ($today === dateArr[12]) { //休养日
-		$("#game-list").append('<h3 style="color: orange; margin: 20px auto;">今日は休養日</h3><h3 style="margin: 20px auto;">明日の試合</h3>');
+	} else if ($today === dateArr[13]) { //休养日
+    console.log('===');
+    $('#message').empty().append('<h3 style="color: orange; margin: 20px auto;">今日は休養日</h3><h3 style="margin: 20px auto;">明日の試合</h3>');
 		showTodaysGame($schedule[12]);
-	} else if ($today > dateArr[11]) { //大会结束后
+	} else if ($today > dateArr[15]) { //大会结束后
 		//TODO: 冠军介绍
-		showTodaysGame($schedule[13]);
+		showTodaysGame($schedule[14]);
 	}
 
 	//大会进行时
@@ -472,15 +473,20 @@ $("#time-table").on("click", "li", function() {
 	$this.siblings().removeClass("today");
 	$this.addClass("today");
 
-
-	if($this.index() > 12) {
-		showTodaysGame($schedule[$this.index()-1]);
-	} else if($this.index() < 12) {
-		showTodaysGame($schedule[$this.index()]);
+	if ($this.index() < 7) {
+    showTodaysGame($schedule[$this.index()]);
+	} else if ($this.index() === 7) {
+    $("#message").append('<h3 style="color: orange; margin: 20px auto;">天気のため、今日は試合がありません。</h3><h3 style="margin: 20px auto;">明日の試合</h3>');
+    showTodaysGame($schedule[7]);
+	} else if ($this.index() > 7 && $this.index() < 13) {
+    showTodaysGame($schedule[$this.index() - 1]);
+	} else if ($this.index() > 13) {
+    showTodaysGame($schedule[$this.index() - 2]);
 	} else {
-		$("#message").append('<h3 style="color: orange; margin: 20px auto;">今日は休養日</h3><h3 style="margin: 20px auto;">明日の試合</h3>');
-		showTodaysGame($schedule[12]);
+    $("#message").append('<h3 style="color: orange; margin: 20px auto;">今日は休養日</h3><h3 style="margin: 20px auto;">明日の試合</h3>');
+    showTodaysGame($schedule[12]);
 	}
+
 	var $todaysDate = new Date();
 	var $thisDate = $todaysDate.getDate();
 	if ($thisDate == $(".today .date").text()) {
