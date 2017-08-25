@@ -20,12 +20,14 @@ var dateArr = [
 	"2017年08月19日",
 	"2017年08月20日",
 	"2017年08月21日",
-	"2017年08月22日"
+	"2017年08月22日",
+	"2017年08月23日"
 ];
 
 var startDate = [2017, 7, 8];
 
-var restDay = dateArr[12];
+var restDay = dateArr[13];
+var cancelDay = [dateArr[7]];
 
 /* 获取数据 */
 
@@ -40,20 +42,9 @@ $.getJSON("./data/game.json", function(data) {
 
 /* 简单函数 */
 
-function getSchoolName(id) {
+function getPrefecture(name) {
   var school = $schools.filter(function(school) {
-  	return school.id === id;
-  });
-	if (school[0]) {
-  	return school[0].name;
-	} else {
-    return '';
-	}
-}
-
-function getPrefecture(id) {
-  var school = $schools.filter(function(school) {
-    return school.id === id;
+    return school.name === name;
   });
   if (school[0]) {
   	return school[0].prefecture;
@@ -236,12 +227,11 @@ function showTodaysGame(data) {
 		}
 	}
 
-	// 1/4决赛当天有4场比赛,半决赛当天2场,决赛当天1场,其他时间3场.
-	if($date === dateArr[0] || $date === dateArr[4] || $date === dateArr[8]) {
+	if($date === dateArr[0] || $date === dateArr[4] || $date === dateArr[9]) {
 		appendSingleGame(3);
-	} else if ($date === dateArr[13]) {
-		appendSingleGame(2);
 	} else if ($date === dateArr[14]) {
+		appendSingleGame(2);
+	} else if ($date === dateArr[15]) {
 		appendSingleGame(1);
 	} else {
 		appendSingleGame(4);
@@ -256,9 +246,9 @@ function showTodaysGame(data) {
 		var $gameId = $elem["id"];
 		var $gameRound = $elem["round"];
 		var $gameTime = $elem["time"];
-		var $first = getSchoolName($elem["first"]); //一垒侧
+		var $first = $elem["first"]; //一垒侧
 		var $firstPrefecture = getPrefecture($elem["first"]);
-		var $third = getSchoolName($elem["third"]); //三垒侧
+		var $third = $elem["third"]; //三垒侧
 		var $thirdPrefecture = getPrefecture($elem["third"]);
 		var $score = $elem["score"]; //最终比分: X-X
 		var $finalScore = $score.split("-");
@@ -359,16 +349,18 @@ function showTodaysGame(data) {
 
 function onloadShow() {
 	var $today = getDateToday();
+  console.log($today, 'today');
 	emptyList();
 	if ($today < dateArr[0]) { //大会开赛前
 		$("#message").append('<h3 style="color: orange; margin: 20px auto;">大会前（今日は' + getDateToday() + '），抽選会は8月4日に行います。</h3><h3 style="margin: 20px auto;">第一日の試合</h3>');
 		showTodaysGame($schedule[0]);
-	} else if ($today === dateArr[12]) { //休养日
-		$("#game-list").append('<h3 style="color: orange; margin: 20px auto;">今日は休養日</h3><h3 style="margin: 20px auto;">明日の試合</h3>');
+	} else if ($today === dateArr[13]) { //休养日
+    console.log('===');
+    $('#message').empty().append('<h3 style="color: orange; margin: 20px auto;">今日は休養日</h3><h3 style="margin: 20px auto;">明日の試合</h3>');
 		showTodaysGame($schedule[12]);
-	} else if ($today > dateArr[11]) { //大会结束后
+	} else if ($today > dateArr[15]) { //大会结束后
 		//TODO: 冠军介绍
-		showTodaysGame($schedule[13]);
+		showTodaysGame($schedule[14]);
 	}
 
 	//大会进行时
@@ -417,7 +409,7 @@ function showSingleCard(school) {
 				var $sThird = $gameInfo["third"];
 				var $sScore = $gameInfo["score"];
 				var $sRawDate = getGameInfoOrDate($sGameId, "date");
-				var $sDate = "(" + $sRawDate[5] + "/" + $sRawDate[7] + $sRawDate[8] + ")";
+				var $sDate = "(" + $sRawDate[5] + $sRawDate[6] + "/" + $sRawDate[8] + $sRawDate[9] + ")";
 
 				var cardGame = $('<tr>' +
 					'<td>' +
@@ -428,7 +420,7 @@ function showSingleCard(school) {
 					'<td class="score">' +
 					'<span class="first-score">' + $sScore.split("-")[0] + '</span>' +
 					'<span class="vs">-</span>' +
-					'<span class="third-score">' + $sScore.split("-")[1] + '</span>' +
+					'<span class="third-score">' + ($sScore.split("-")[1] || "") + '</span>' +
 					'</td>' +
 					'<td>' +
 					'<span class="third-name">' + $sThird + '</span>' +
@@ -481,15 +473,20 @@ $("#time-table").on("click", "li", function() {
 	$this.siblings().removeClass("today");
 	$this.addClass("today");
 
-
-	if($this.index() > 12) {
-		showTodaysGame($schedule[$this.index()-1]);
-	} else if($this.index() < 12) {
-		showTodaysGame($schedule[$this.index()]);
+	if ($this.index() < 7) {
+    showTodaysGame($schedule[$this.index()]);
+	} else if ($this.index() === 7) {
+    $("#message").append('<h3 style="color: orange; margin: 20px auto;">天気のため、今日は試合がありません。</h3><h3 style="margin: 20px auto;">明日の試合</h3>');
+    showTodaysGame($schedule[7]);
+	} else if ($this.index() > 7 && $this.index() < 13) {
+    showTodaysGame($schedule[$this.index() - 1]);
+	} else if ($this.index() > 13) {
+    showTodaysGame($schedule[$this.index() - 2]);
 	} else {
-		$("#message").append('<h3 style="color: orange; margin: 20px auto;">今日は休養日</h3><h3 style="margin: 20px auto;">明日の試合</h3>');
-		showTodaysGame($schedule[12]);
+    $("#message").append('<h3 style="color: orange; margin: 20px auto;">今日は休養日</h3><h3 style="margin: 20px auto;">明日の試合</h3>');
+    showTodaysGame($schedule[12]);
 	}
+
 	var $todaysDate = new Date();
 	var $thisDate = $todaysDate.getDate();
 	if ($thisDate == $(".today .date").text()) {
