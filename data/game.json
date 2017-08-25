@@ -83,7 +83,7 @@
       "prefecture-id": "saitama",
       "name": "花咲徳栄",
       "count": "３年連続５回目",
-      "games":["3-2", "8-3", "11-2", "12-4", "13-2"]
+      "games":["3-2", "8-3", "11-2", "12-4", "13-2", "14-1"]
     }, {
       "id": 13,
       "prefecture": "千葉",
@@ -237,7 +237,7 @@
       "prefecture-id": "hiroshima",
       "name": "広陵",
       "count": "３年ぶり２２回目",
-      "games":["4-1", "9-1", "11-3", "12-3", "13-1"]
+      "games":["4-1", "9-1", "11-3", "12-3", "13-1", "14-1"]
     }, {
       "id": 35,
       "prefecture": "鳥取",
@@ -954,11 +954,11 @@
           "time": "11:00",
           "round": "準決勝",
           "first": "天理",
-          "firstIsHome": true,
+          "firstIsHome": false,
           "third": "広陵",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "score": "9-12",
+          "fScore": [0, 0, 2, 2, 0, 0, 2, 0, 3],
+          "tScore": [2, 0, 0, 1, 1, 2, 3, 0, 3],
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017082261.html",
           "video": "http://www.asahi.com/koshien/digest/20170822_1d.html"
         },{
@@ -968,9 +968,9 @@
           "first": "花咲徳栄",
           "firstIsHome": true,
           "third": "東海大菅生",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "score": "9-6",
+          "fScore": [0, 1, 2, 1, 0, 0, 0, 2, 0, 0, 3],
+          "tScore": [2, 1, 1, 0, 0, 0, 0, 0, 2, 0, 0],
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017082261.html",
           "video": "http://www.asahi.com/koshien/digest/20170822_2d.html"
         }
@@ -982,12 +982,12 @@
           "id": "14-1",
           "time": "13:00",
           "round": "決勝",
-          "first": "",
+          "first": "広陵",
           "firstIsHome": true,
-          "third": "",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "third": "花咲徳栄",
+          "score": "4-14",
+          "fScore": [0, 1, 1, 0, 1, 1, 0, 0, 0],
+          "tScore": [2, 0, 2, 0, 6, 4, 0, 0, 0],
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017082361.html",
           "video": "http://www.asahi.com/koshien/digest/20170823_1d.html"
         }
