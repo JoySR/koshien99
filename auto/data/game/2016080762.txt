@@ -1,0 +1,1 @@
+{"first":"出雲","third":"智弁学園","firstIsHome":false,"home":{"name":"智弁学園","score":"6","scoreList":["2","0","1","0","0","1","0","2","0"]},"visit":{"name":"出雲","score":"1","scoreList":["0","0","1","0","0","0","0","0","0"]}}

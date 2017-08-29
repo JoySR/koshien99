@@ -1,0 +1,1 @@
+{"first":"作新学院","third":"北海","firstIsHome":true,"home":{"name":"作新学院","score":"7","scoreList":["0","0","0","5","1","0","1","0","0"]},"visit":{"name":"北海","score":"1","scoreList":["0","1","0","0","0","0","0","0","0"]}}

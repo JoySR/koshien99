@@ -1,0 +1,1 @@
+{"first":"近江","third":"常総学院","firstIsHome":false,"home":{"name":"常総学院","score":"11","scoreList":["2","3","0","2","0","1","2","0","1"]},"visit":{"name":"近江","score":"0","scoreList":["0","0","0","0","0","0","0","0","0"]}}

@@ -1,0 +1,1 @@
+{"first":"八王子","third":"日南学園","firstIsHome":false,"home":{"name":"日南学園","score":"7","scoreList":["0","0","0","0","1","5","1","0","0"]},"visit":{"name":"八王子","score":"1","scoreList":["0","0","0","0","0","0","0","0","1"]}}

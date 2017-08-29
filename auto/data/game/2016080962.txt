@@ -1,0 +1,1 @@
+{"first":"山梨学院","third":"長崎商","firstIsHome":false,"home":{"name":"長崎商","score":"3","scoreList":["0","0","0","0","0","0","0","1","2"]},"visit":{"name":"山梨学院","score":"5","scoreList":["2","0","1","0","0","0","2","0","X"]}}

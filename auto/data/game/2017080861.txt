@@ -1,0 +1,1 @@
+{"first":"彦根東","third":"波佐見","firstIsHome":false,"home":{"name":"波佐見","score":"5","scoreList":["0","1","1","0","0","1","2","0","0"]},"visit":{"name":"彦根東","score":"6","scoreList":["0","1","3","0","0","0","0","0","2"]}}

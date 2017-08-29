@@ -1,0 +1,1 @@
+{"first":"明徳義塾","third":"境","firstIsHome":false,"home":{"name":"境","score":"2","scoreList":["0","0","2","0","0","0","0","0","0"]},"visit":{"name":"明徳義塾","score":"7","scoreList":["2","0","0","1","1","1","0","2","X"]}}

@@ -1,0 +1,1 @@
+{"first":"常総学院","third":"履正社","firstIsHome":true,"home":{"name":"常総学院","score":"7","scoreList":["2","3","0","0","2","0","0","0","0"]},"visit":{"name":"履正社","score":"4","scoreList":["0","1","0","0","1","1","0","0","1"]}}

@@ -1,0 +1,1 @@
+{"first":"広島新庄","third":"富山第一","firstIsHome":false,"home":{"name":"富山第一","score":"1","scoreList":["0","0","0","1","0","0","0","0","0"]},"visit":{"name":"広島新庄","score":"7","scoreList":["0","0","1","0","0","2","0","4","X"]}}

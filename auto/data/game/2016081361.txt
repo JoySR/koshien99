@@ -1,0 +1,1 @@
+{"first":"木更津総合","third":"唐津商","firstIsHome":false,"home":{"name":"唐津商","score":"0","scoreList":["0","0","0","0","0","0","0","0","0"]},"visit":{"name":"木更津総合","score":"2","scoreList":["0","2","0","0","0","0","0","0","X"]}}

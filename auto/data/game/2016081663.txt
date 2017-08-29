@@ -1,0 +1,1 @@
+{"first":"盛岡大付","third":"鳴門","firstIsHome":false,"home":{"name":"鳴門","score":"11","scoreList":["0","0","0","5","0","0","1","5","0"]},"visit":{"name":"盛岡大付","score":"9","scoreList":["1","0","0","0","4","0","0","0","4"]}}

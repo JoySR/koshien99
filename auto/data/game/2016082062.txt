@@ -1,0 +1,1 @@
+{"first":"北海","third":"秀岳館","firstIsHome":false,"home":{"name":"秀岳館","score":"3","scoreList":["0","0","0","0","0","0","1","2","0"]},"visit":{"name":"北海","score":"4","scoreList":["0","0","3","0","1","0","0","0","X"]}}

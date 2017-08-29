@@ -1,0 +1,1 @@
+{"first":"日南学園","third":"北海","firstIsHome":true,"home":{"name":"日南学園","score":"1","scoreList":["1","0","0","0","0","0","0","0","0"]},"visit":{"name":"北海","score":"4","scoreList":["0","1","0","0","0","0","0","3","X"]}}

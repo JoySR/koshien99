@@ -1,0 +1,1 @@
+{"first":"常総学院","third":"秀岳館","firstIsHome":true,"home":{"name":"常総学院","score":"1","scoreList":["0","0","0","0","1","0","0","0","0"]},"visit":{"name":"秀岳館","score":"4","scoreList":["0","1","1","0","0","2","0","0","X"]}}

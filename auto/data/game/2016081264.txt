@@ -1,0 +1,1 @@
+{"first":"秀岳館","third":"常葉菊川","firstIsHome":false,"home":{"name":"常葉菊川","score":"1","scoreList":["0","0","0","0","0","1","0","0","0"]},"visit":{"name":"秀岳館","score":"6","scoreList":["0","0","0","1","0","0","3","2","X"]}}

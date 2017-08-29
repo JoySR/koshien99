@@ -1,0 +1,1 @@
+{"first":"済美","third":"東筑","firstIsHome":false,"home":{"name":"東筑","score":"4","scoreList":["0","0","0","3","1","4"]},"visit":{"name":"済美","score":"2","scoreList":["1","0","1","0","2"]}}

@@ -1,0 +1,1 @@
+{"first":"花咲徳栄","third":"作新学院","firstIsHome":true,"home":{"name":"花咲徳栄","score":"2","scoreList":["0","0","0","1","0","0","0","1","0"]},"visit":{"name":"作新学院","score":"6","scoreList":["0","5","0","0","0","0","0","1","X"]}}

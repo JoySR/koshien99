@@ -1,0 +1,1 @@
+{"first":"鳴門","third":"智弁学園","firstIsHome":true,"home":{"name":"鳴門","score":"5","scoreList":["0","0","0","0","1","1","0","0","3"]},"visit":{"name":"智弁学園","score":"2","scoreList":["2","0","0","0","0","0","0","0","0"]}}

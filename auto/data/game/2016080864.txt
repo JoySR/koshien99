@@ -1,0 +1,1 @@
+{"first":"東邦","third":"北陸","firstIsHome":false,"home":{"name":"北陸","score":"9","scoreList":["0","0","0","2","0","0","3","2","2"]},"visit":{"name":"東邦","score":"19","scoreList":["0","3","1","1","2","0","1","2","0"]}}

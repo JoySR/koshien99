@@ -1,0 +1,1 @@
+{"first":"佐久長聖","third":"鳴門","firstIsHome":true,"home":{"name":"佐久長聖","score":"2","scoreList":["0","0","0","0","1","0","1","0","0"]},"visit":{"name":"鳴門","score":"3","scoreList":["2","1","0","0","0","0","0","0","X"]}}

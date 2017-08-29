@@ -1,0 +1,1 @@
+{"first":"高川学園","third":"履正社","firstIsHome":true,"home":{"name":"高川学園","score":"1","scoreList":["0","0","0","0","0","1","0","0","0"]},"visit":{"name":"履正社","score":"5","scoreList":["0","4","0","0","0","0","1","0","X"]}}

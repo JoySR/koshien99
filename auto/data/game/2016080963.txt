@@ -1,0 +1,1 @@
+{"first":"東北","third":"横浜","firstIsHome":false,"home":{"name":"横浜","score":"7","scoreList":["1","0","3","1","0","1","1","0","0"]},"visit":{"name":"東北","score":"1","scoreList":["0","0","1","0","0","0","0","0","0"]}}

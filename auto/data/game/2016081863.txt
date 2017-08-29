@@ -1,0 +1,1 @@
+{"first":"北海","third":"聖光学院","firstIsHome":true,"home":{"name":"北海","score":"7","scoreList":["0","2","0","2","2","0","0","1","0"]},"visit":{"name":"聖光学院","score":"3","scoreList":["3","0","0","0","0","0","0","0","0"]}}

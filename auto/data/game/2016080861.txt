@@ -1,0 +1,1 @@
+{"first":"いなべ総合","third":"鶴岡東","firstIsHome":false,"home":{"name":"鶴岡東","score":"3","scoreList":["0","2","0","0","0","0","0","0","1"]},"visit":{"name":"いなべ総合","score":"5","scoreList":["0","0","1","0","2","0","2","0","X"]}}

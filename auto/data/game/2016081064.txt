@@ -1,0 +1,1 @@
+{"first":"花咲徳栄","third":"大曲工","firstIsHome":true,"home":{"name":"花咲徳栄","score":"6","scoreList":["1","1","0","1","0","0","0","2","1"]},"visit":{"name":"大曲工","score":"1","scoreList":["0","0","0","1","0","0","0","0","0"]}}

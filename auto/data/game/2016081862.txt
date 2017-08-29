@@ -1,0 +1,1 @@
+{"first":"鳴門","third":"明徳義塾","firstIsHome":false,"home":{"name":"明徳義塾","score":"3","scoreList":["0","1","0","2","0","0","0","0","0"]},"visit":{"name":"鳴門","score":"0","scoreList":["0","0","0","0","0","0","0","0","0"]}}

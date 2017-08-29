@@ -1,0 +1,1 @@
+{"first":"市和歌山","third":"日南学園","firstIsHome":false,"home":{"name":"日南学園","score":"6","scoreList":["0","0","1","0","2","2","0","0","1"]},"visit":{"name":"市和歌山","score":"4","scoreList":["0","3","0","0","0","0","1","0","0"]}}

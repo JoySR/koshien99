@@ -1,0 +1,1 @@
+{"first":"星稜","third":"市和歌山","firstIsHome":false,"home":{"name":"市和歌山","score":"8","scoreList":["1","3","0","0","0","0","1","3","0"]},"visit":{"name":"星稜","score":"2","scoreList":["1","1","0","0","0","0","0","0","0"]}}

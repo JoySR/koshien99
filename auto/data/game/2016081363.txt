@@ -1,0 +1,1 @@
+{"first":"創志学園","third":"盛岡大付","firstIsHome":true,"home":{"name":"創志学園","score":"8","scoreList":["0","3","1","0","0","3","1","0","0"]},"visit":{"name":"盛岡大付","score":"11","scoreList":["0","0","0","4","4","3","0","0","X"]}}

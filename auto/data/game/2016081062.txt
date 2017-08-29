@@ -1,0 +1,1 @@
+{"first":"京都翔英","third":"樟南","firstIsHome":true,"home":{"name":"京都翔英","score":"1","scoreList":["1","0","0","0","0","0","0","0","0"]},"visit":{"name":"樟南","score":"9","scoreList":["3","0","0","0","0","4","2","0","X"]}}

@@ -1,0 +1,1 @@
+{"first":"尽誠学園","third":"作新学院","firstIsHome":false,"home":{"name":"作新学院","score":"3","scoreList":["2","0","0","0","0","0","1","0","0"]},"visit":{"name":"尽誠学園","score":"0","scoreList":["0","0","0","0","0","0","0","0","0"]}}

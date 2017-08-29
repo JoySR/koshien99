@@ -1,0 +1,1 @@
+{"first":"東邦","third":"聖光学院","firstIsHome":false,"home":{"name":"聖光学院","score":"5","scoreList":["1","0","0","0","1","2","1","0","0"]},"visit":{"name":"東邦","score":"2","scoreList":["0","1","0","0","0","0","0","1","0"]}}
